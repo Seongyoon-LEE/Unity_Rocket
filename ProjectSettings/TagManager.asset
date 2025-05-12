@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - BULLET
+  - Asteroid
+  - Fire
+  - COIN
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: FAR
+    uniqueID: 3680626705
+    locked: 0
+  - name: NEAR
+    uniqueID: 428660289
+    locked: 0
+  - name: ROCKET
+    uniqueID: 3625184077
+    locked: 0
+  - name: ASTEROID
+    uniqueID: 1444360353
+    locked: 0
+  - name: COIN
+    uniqueID: 2265519957
+    locked: 0
