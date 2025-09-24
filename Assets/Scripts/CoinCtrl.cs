@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class CoinCtrl : MonoBehaviour
 {
+    public float speed = 100f; //코인 속도
     private Rigidbody2D rb2D;
-    private CircleCollider2D circle;
-    public float speed = 100f;
-    
-    void Start()
+
+    private void OnEnable()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        rb2D.AddForce(Vector2.right * speed,ForceMode2D.Impulse);
+        rb2D.AddForce(Vector2.right * speed, ForceMode2D.Impulse);
+        Invoke("CoinDisable", 2.2f); // 3초 후에 총알 비활성화
     }
-
-
-    void Update()
+    void CoinDisable()
     {
-       
+        this.gameObject.SetActive(false); // 총알 비활성화
     }
 }

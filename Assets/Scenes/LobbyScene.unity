@@ -1016,11 +1016,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e54dbd312897f4f46b22e2db08d05c4c, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: dd526553f31aeaa44bf7a95450056ae9, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1446,7 +1446,9 @@ MonoBehaviour:
   speed: 5
   effect: {fileID: 100000, guid: 73f40355f48d33a42aad8dce5b85b8be, type: 3}
   source: {fileID: 0}
-  hitclip: {fileID: 8300000, guid: 8844ea1e78ce19c4fb275e7ae3e40020, type: 3}
+  hitClip: {fileID: 0}
+  firePos: {fileID: 0}
+  coinPrefab: {fileID: 0}
 --- !u!50 &798355357
 Rigidbody2D:
   serializedVersion: 4

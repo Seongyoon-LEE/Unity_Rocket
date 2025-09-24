@@ -97,10 +97,14 @@ public class GameManager : MonoBehaviour
     }
     private void AsteroidSpawn()
     {
-        float randomY = Random.Range(-3.6f, 3.3f); // 랜덤으로 y좌표 설정 
-        Instantiate(asteroidPrefab, new Vector3(12f, randomY, asteroidPrefab.transform.position.z), Quaternion.identity );
-        //오브젝트생성함수(what?,where,how)회전할것인가
-        timePreve = Time.time; // 현재 시간 저장 
+        float randomY = Random.Range(-4.0f, 4.0f); //랜덤으로 y좌표 설정
+        GameObject _asteroid = PoolingManager.p_Instance.GetAsteroid();
+        if (_asteroid != null)
+        {
+            _asteroid.transform.position = new Vector3(12f, randomY, 0f); // 위치 지정
+            _asteroid.SetActive(true);
+        }
+        timePreve = Time.time; //현재시간 저장
     }
     public void RoketHealtPoint(int damage)
     {
